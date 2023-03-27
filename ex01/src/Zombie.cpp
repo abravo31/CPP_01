@@ -6,7 +6,7 @@
 /*   By: abravo <abravo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 20:58:10 by abravo            #+#    #+#             */
-/*   Updated: 2023/03/26 23:53:20 by abravo           ###   ########.fr       */
+/*   Updated: 2023/03/27 16:28:43 by abravo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,11 @@ Zombie::~Zombie(){
     return ;
 }
 
+void Zombie::setName(std::string name){
+    this->_Name = name;
+    return ;   
+}
+
 void Zombie::announce( void ) const{
-    std::cout << _Name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+    std::cout << this->_Name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
